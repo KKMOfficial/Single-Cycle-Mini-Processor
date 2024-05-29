@@ -1,0 +1,132 @@
+$date
+	Wed Nov 25 21:30:30 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_mini_processor $end
+$var wire 8 ! writeDataFeedBack [7:0] $end
+$var wire 8 " ssOutput [7:0] $end
+$var wire 1 # regWrite $end
+$var wire 8 $ mainAluResult [7:0] $end
+$var wire 1 % jump $end
+$var wire 16 & instructionMemoryOutput [15:0] $end
+$var wire 8 ' immidiate [7:0] $end
+$var wire 4 ( flagReg [3:0] $end
+$var wire 8 ) dataMemoryOutput [7:0] $end
+$var wire 64 * dataLookUp [63:0] $end
+$var wire 1 + correction $end
+$var wire 1 , carryOut $end
+$var wire 1 - WriteDMem $end
+$var wire 8 . Reg2MemData [7:0] $end
+$var wire 8 / Reg1MemData [7:0] $end
+$var wire 1 0 ReadDMem $end
+$var wire 64 1 DMdata [63:0] $end
+$var reg 1 2 clk $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+02
+b110000000000000000000000000000000000000000000000000 1
+00
+b0 /
+bx .
+0-
+x,
+0+
+b0 *
+bz )
+b0 (
+b10000000 '
+b1011000110000000 &
+0%
+bx $
+1#
+b0 "
+b10000000 !
+$end
+#10
+b10000000 !
+b10000000 $
+b1 '
+b10000000 .
+b110011001 &
+0,
+b0 /
+b10000000000000000000000000000000000000000000000000000000 *
+12
+#20
+02
+#30
+b1 !
+b1 $
+1+
+b1101001001 &
+b10000000 /
+b10000000000000001000000000000000000000000000000000000000 *
+12
+#40
+02
+#50
+0+
+b10 !
+b10000001001 &
+b1 (
+b10 $
+b1 /
+b1 .
+b1000000001000000000000000000000000000000000000000 *
+12
+#60
+02
+#70
+b1 !
+b1 $
+b1000 (
+b1111001001 &
+b10 /
+b10 .
+b10000000001000000000000000000000000000000000000000 *
+12
+#80
+02
+#90
+0#
+b0 !
+b0 '
+b0 &
+b0 $
+b0 /
+b0 .
+b1000000001000000000000000000000000000000000000000 *
+12
+#100
+02
+#110
+b0 (
+12
+#120
+02
+#130
+12
+#140
+02
+#150
+12
+#160
+02
+#170
+12
+#180
+02
+#190
+12
+#200
+02
+#210
+12
+#220
